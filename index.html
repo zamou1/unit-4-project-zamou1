@@ -1,19 +1,266 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>My Emerging Technology</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5G Network & Beyond</title>
+    <style>
+        /* General Styles */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0a192f; /* Dark Blue */
+            color: #e6f1ff;
+            line-height: 1.6;
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(to bottom, #020c1b, #0a192f);
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            color: #64ffda; /* Teal highlight */
+        }
+
+        header h2 {
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: #8892b0;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        .author-info {
+            font-size: 1.1rem;
+            color: #ccd6f6;
+            margin-top: 0;
+            opacity: 0.9;
+        }
+
+        /* Tab Navigation */
+        .tabs-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .tabs-nav {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            border-bottom: 2px solid #233554;
+            flex-wrap: wrap;
+        }
+
+        .tab-link {
+            padding: 15px 25px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            color: #ccd6f6;
+            font-size: 1.1rem;
+            transition: 0.3s;
+            outline: none;
+        }
+
+        .tab-link:hover {
+            color: #64ffda;
+        }
+
+        .tab-link.active {
+            color: #64ffda;
+            border-bottom: 3px solid #64ffda;
+            font-weight: bold;
+        }
+
+        /* Tab Content */
+        .tab-content {
+            display: none;
+            padding: 40px 20px;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Content Formatting */
+        .content-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h3 {
+            color: #64ffda;
+            font-size: 2rem;
+            margin-top: 0;
+        }
+
+        h4 {
+            color: #ccd6f6;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            border-left: 4px solid #64ffda;
+            padding-left: 15px;
+        }
+
+        p {
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+        }
+
+        .map-container {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .map-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border: 1px solid #233554;
+        }
+
+        .leader-card {
+            background: #112240;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .leader-card:hover {
+            transform: scale(1.02);
+        }
+
+    </style>
 </head>
 <body>
-<h1>My Emerging Technology</h1>
-<p>This webpage is hosted online using GitHub Pages.</p>
-<h2>What is the technology?</h2>
-<p>Write your explanation here.</p>
-<h2>Real-world applications</h2>
-<p>Explain where this technology is used.</p>
-<h2>Social impacts</h2>
-<p>Discuss positive and negative impacts.</p>
-<a href="https://classroom.google.com">Visit Google Classroom</a>
-<br>
-<img src="https://www.gstatic.com/classroom/logo_square_rounded.svg">
+
+    <header>
+        <h1>5G network</h1>
+        <h2>(and a peak into 6G!)</h2>
+        <div class="author-info">
+            Zeinab Amoud<br>
+            ICD2O
+        </div>
+    </header>
+
+    <div class="tabs-container">
+        <div class="tabs-nav">
+            <button class="tab-link active" onclick="openTab(event, 'intro')">Introduction</button>
+            <button class="tab-link" onclick="openTab(event, 'leaders')">Top Leaders</button>
+            <button class="tab-link" onclick="openTab(event, 'future')">6G Vision</button>
+        </div>
+
+        <div id="intro" class="tab-content active">
+            <div class="content-wrapper">
+                <h3>What is 5G technology?</h3>
+                <p>
+                    5G is the fifth generation mobile network. It is a global wireless standard designed to deliver higher multi-Gbps peak data speeds, ultra-low latency, increased reliability, and massive network capacity. It supports AI and autonomous vehicles, with speeds potentially reaching 20 Gbps to transform industries, entertainment, and everyday connectivity.
+                </p>
+
+                <p>
+                    5G technology was introduced to the world in April 2019. As of 2026, 70+ countries out of 195 have 5G technology as their main wireless network. The three top competitors that work to improve 5G technology are Ericsson, Huawei and Nokia.
+                </p>
+
+                <p>
+                    5G is used across three main types of connected services, including enhanced mobile broadband, mission-critical communications and more. A definition capability of 5G is that it is designed for forward compatibility, the ability to flexibly support future services that are unknown today.
+                </p>
+
+                <p>
+                    In addition to making smartphones better, 5G mobile technology can usher in new immersive experiences such as VR and AR with faster, more uniform data rates, lower latency, and lower cost-per-bit.
+                </p>
+
+                <p>
+                    The average consumer is expected to use close to 11 GB of data per month on their smartphone in 2022. This is driven by explosive growth in video traffic as mobile is increasingly becoming the source of media and entertainment, as well as the massive growth in always-connected cloud computing and experiences.
+                </p>
+
+                <p>
+                    4G completely changed how we consume information. In the past decade we have witnessed leaps and bounds in the mobile app industry around services such as video streaming, ride sharing, food delivery and more.
+                </p>
+                 
+                <p>
+                    5G will expand the mobile ecosystem to new industries. This will contribute to cutting-edge user experiences such as boundless extreme reality (XR), seamless IoT capabilities, new enterprise applications, local interactive content and instant cloud access, to name a few.
+                </p>
+
+                <p><strong>Note:</strong> 5G’s successor, 6G, is expected to roll out around 2030.</p>
+
+                <div class="map-container">
+                    <h4>Global 5G Deployment Map</h4>
+                    <img src="https://cdn.everythingrf.com/live/1615989670156_637515864708528639.png" alt="Map of countries that use 5G technology">
+                </div>
+            </div>
+        </div>
+
+        <div id="leaders" class="tab-content">
+            <div class="content-wrapper">
+                <h3>Top leaders</h3>
+                <p>
+                    With 5G growing stronger and stronger and 6G technology coming soon, a lot of companies are working on these projects to make them more popular, reliable and strong. As of April 2026, the top competitors would be Ericsson, Nokia and Huawei.
+                </p>
+
+                <div class="leader-card">
+                    <h4>Ericsson</h4>
+                    <p>
+                        Ericsson is a global leader in 5G technology, currently managing approximately 50% of the world's mobile traffic. As of now, the company is focused on the transition to 5G-Advanced, which introduces high-position positioning and AI-driven automation into mobile networks.
+                    </p>
+                </div>
+
+                <div class="leader-card">
+                    <h4>Nokia</h4>
+                    <p>
+                        Nokia is a company that is actively leaving 5G advancements through projects focused on 5G-Advanced, Ai-driven network automation, and industrial private networks. Key initiatives include developing distributed massive MIMO, deploying cloud native 5G Core networks, and R&D for 5G/6G in cities such as Ottawa. The key projects focus on industrial loT, smart cities, and railway modernization.
+                    </p>
+                </div>
+
+                <div class="leader-card">
+                    <h4>Huawei</h4>
+                    <p>
+                        Huawei is leading the development and commercial deployment of 5G-Advanced (5G-A or 5.5G), aiming for widespread adoption by 2025-2026. Their current projects focus on integrating AI with 5G infrastructure, upgrading smart manufacturing. Enabling new ‘low-altitude economy’ services.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="future" class="tab-content">
+            <div class="content-wrapper">
+                <h3>The Road to 6G</h3>
+                <p>The next frontier of connectivity aims to integrate satellite and terrestrial networks to provide global coverage, including oceans and remote areas. Research is already underway to utilize Terahertz (THz) frequencies to achieve speeds up to 100 times faster than 5G.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabContent, tabLinks;
+            tabContent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabContent.length; i++) {
+                tabContent[i].style.display = "none";
+                tabContent[i].classList.remove("active");
+            }
+            tabLinks = document.getElementsByClassName("tab-link");
+            for (i = 0; i < tabLinks.length; i++) {
+                tabLinks[i].className = tabLinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
 </body>
 </html>
